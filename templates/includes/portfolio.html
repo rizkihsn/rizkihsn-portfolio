@@ -1,0 +1,87 @@
+{% extends 'base.html' %}
+
+{% block title %}Portfolio - Rizki Hasan Fauzi{% endblock %}
+
+{% block body_class %}bg-portfolio{% endblock %} <!-- class custom untuk background beda (opsional) -->
+
+{% block content %}
+
+<section class="py-5 py-lg-7">
+    <div class="container">
+        <!-- Judul Halaman -->
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-4 fw-bold gradient-text mb-3">Portfolio</h2>
+            <p class="lead text-secondary fw-light">
+                Beberapa proyek yang pernah saya kerjakan dan kembangkan
+            </p>
+        </div>
+
+        <!-- Grid Project Cards -->
+        <div class="row g-4">
+            <!-- Project 1: Inventaris Sekolah -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card h-100">
+                    <img src="{{ url_for('static', filename='img/inventaris-sekolah.jpg') }}" class="card-img-top"
+                        alt="Inventaris Sekolah">
+                    <div class="overlay">
+                        <div>
+                            <h5 class="mb-2">Inventaris Sekolah</h5>
+                            <p class="small mb-3">Sistem manajemen stok & inventaris sekolah menggunakan Flask &
+                                PostgreSQL</p>
+                            <a href="https://github.com/rizkihsn/INVENTARIS_SEKOLAH" target="_blank"
+                                class="btn btn-sm btn-primary">
+                                Lihat di GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Tugas Portfolio -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card h-100">
+                    <img src="{{ url_for('static', filename='img/tugas-portfolio.jpg') }}" class="card-img-top"
+                        alt="Tugas Portfolio">
+                    <div class="overlay">
+                        <div>
+                            <h5 class="mb-2">Tugas Portfolio Website</h5>
+                            <p class="small mb-3">Website portfolio pribadi dengan Flask, Bootstrap & animasi AOS</p>
+                            <a href="https://github.com/rizkihsn/TUGAS-PORTFOLIO" target="_blank"
+                                class="btn btn-sm btn-primary">
+                                Lihat di GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Aplikasi Sembako -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-card h-100">
+                    <img src="{{ url_for('static', filename='img/aplikasi-sembako.jpg') }}" class="card-img-top"
+                        alt="Aplikasi Sembako">
+                    <div class="overlay">
+                        <div>
+                            <h5 class="mb-2">Aplikasi Sembako</h5>
+                            <p class="small mb-3">Sistem pemesanan & penjualan sembako online</p>
+                            <a href="https://github.com/rizkihsn/aplikasi-sembako" target="_blank"
+                                class="btn btn-sm btn-primary">
+                                Lihat di GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional: Tombol tambah project atau CTA -->
+        <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="400">
+            <p class="text-secondary mb-3">Ingin melihat lebih banyak atau kolaborasi?</p>
+            <a href="/contact" class="btn btn-primary btn-lg px-5">
+                Hubungi Saya
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

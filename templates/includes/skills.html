@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block title %}Keahlian Saya - Rizki Hasan Fauzi{% endblock %}
+
+{% block body_class %}bg-skills{% endblock %} <!-- class custom untuk background beda -->
+
+{% block content %}
+
+<section class="py-5 py-lg-7">
+    <div class="container">
+        <!-- Judul Section -->
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-4 fw-bold gradient-text mb-3">Keahlian Saya</h2>
+            <p class="lead text-secondary fw-light">
+                Teknologi & tools yang saya kuasai dan gunakan sehari-hari
+            </p>
+        </div>
+
+        <!-- Grid Skill Cards -->
+        <div class="row g-4 justify-content-center">
+            <!-- Skill Card 1: Backend -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card skill-card bg-dark border-primary h-100 text-center p-4 shadow transition-hover">
+                    <i class="bi bi-server fs-1 text-primary mb-4"></i>
+                    <h5 class="card-title fw-bold mb-3">Backend</h5>
+                    <p class="card-text text-secondary">
+                        Python • Flask • FastAPI • Django • SQLAlchemy • PostgreSQL
+                    </p>
+                </div>
+            </div>
+
+            <!-- Skill Card 2: Frontend -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card skill-card bg-dark border-primary h-100 text-center p-4 shadow transition-hover">
+                    <i class="bi bi-display fs-1 text-primary mb-4"></i>
+                    <h5 class="card-title fw-bold mb-3">Frontend</h5>
+                    <p class="card-text text-secondary">
+                        HTML/CSS • JavaScript • React • TailwindCSS • Bootstrap • AOS
+                    </p>
+                </div>
+            </div>
+
+            <!-- Skill Card 3: Tools & Lainnya -->
+            <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card skill-card bg-dark border-primary h-100 text-center p-4 shadow transition-hover">
+                    <i class="bi bi-tools fs-1 text-primary mb-4"></i>
+                    <h5 class="card-title fw-bold mb-3">Tools & Lainnya</h5>
+                    <p class="card-text text-secondary">
+                        Git • Docker • Linux • Figma • CI/CD • SEO Dasar
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional: Tambahan progress bar atau level skill (bisa dihapus kalau tidak mau) -->
+        <div class="row mt-5">
+            <div class="col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="400">
+                <h4 class="text-center mb-4 fw-bold">Level Kemahiran</h4>
+                <div class="progress mb-4" style="height: 10px;">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100">Flask & Python</div>
+                </div>
+                <div class="progress mb-4" style="height: 10px;">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100">React & Tailwind</div>
+                </div>
+                <div class="progress mb-4" style="height: 10px;">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 70%;" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100">Docker & Git</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

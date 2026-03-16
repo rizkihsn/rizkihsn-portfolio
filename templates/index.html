@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+
+{% block title %}Hasan - Full-Stack Developer & UI Enthusiast{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<section id="home" class="min-vh-100 d-flex align-items-center hero-gradient position-relative overflow-hidden">
+    <div class="container position-relative z-1">
+        <div class="row align-items-center gy-5 gy-lg-0">
+
+            <div class="col-lg-7 order-lg-1 order-2 text-center text-lg-start" data-aos="fade-up"
+                data-aos-duration="900">
+                <h6 class="text-primary fw-bold mb-3 fs-5">Hello, I am</h6>
+
+                <h1 class="display-3 display-lg-2 fw-bold mb-3 gradient-text typing-effect">
+                    Rizki Hasan Fauzi
+                </h1>
+
+                <h3 class="lead fw-medium mb-4 typing-effect-delay" data-aos="fade-up" data-aos-delay="300">
+                    Full-Stack Developer & UI Enthusiast
+                </h3>
+
+                <p class="text-secondary fs-5 mb-5" data-aos="fade-up" data-aos-delay="500">
+                    Create beautiful, fast, and meaningful digital experiences.
+                </p>
+
+                <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3 mb-5">
+
+                    <a href="https://instagram.com/_rizkihsn_" target="_blank"
+                        class="btn btn-primary btn-lg px-5 d-flex align-items-center gap-2" aria-label="Instagram">
+                        <i class="bi bi-instagram fs-4"></i>
+                        Instagram
+                    </a>
+
+                    <a href="https://www.facebook.com/Khi Iki" target="_blank"
+                        class="btn btn-outline-light btn-lg px-5 d-flex align-items-center gap-2" aria-label="Facebook">
+                        <i class="bi bi-facebook fs-4"></i>
+                        Facebook
+                    </a>
+
+                    <a href="https://wa.me/6285817760919" target="_blank"
+                        class="btn btn-success btn-lg px-5 d-flex align-items-center gap-2" aria-label="WhatsApp">
+                        <i class="bi bi-whatsapp fs-4"></i>
+                        WhatsApp
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/Rizki Hasan Fauzi" target="_blank"
+                        class="btn btn-info btn-lg px-5 d-flex align-items-center gap-2" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin fs-4"></i>
+                        LinkedIn
+                    </a>
+                </div>
+                </a>
+            </div>
+            <!-- Foto Profil  -->
+            <div class="col-lg-5 order-lg-2 order-1 text-center" data-aos="fade-left" data-aos-delay="200">
+                <img src="{{ url_for('static', filename='img/profile.jpg') }}" alt="Rizki Hasan Fauzi"
+                    class="img-fluid rounded-3 profile-img shadow-2xl">
+            </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 py-lg-7">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 fw-bold gradient-text">About me</h2>
+            <p class="lead text-secondary">Who am I and why do I love programming?</p>
+        </div>
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6" data-aos="fade-right">
+                <img src="{{ url_for('static', filename='img/about-me.jpg') }}" alt="Hasan bekerja"
+                    class="img-fluid rounded-3 shadow-lg">
+            </div>
+            <div class="col-lg-6" data-aos="fade-left">
+                <p class="fs-5 mb-4">
+                    Halo! Saya Hasan, Full-Stack Developer dari Bandung.
+                    I love building fast, beautiful, and truly useful web applications.
+                </p>
+                <p class="fs-5 mb-4">
+                    I am currently developing my skills through projects such as a Flask-based inventory app, a
+                    portfolio website, and studying AI and Machine Learning, to broaden my capabilities in the
+                    technology field.
+                </p>
+                <a href="#contact" class="btn btn-primary btn-lg">Let's Chat</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 py-lg-7 bg-dark">
+    <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-5 fw-bold gradient-text">Skills</h2>
+            <p class="lead text-secondary">Tools & Technologies I Master</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card bg-transparent border-primary text-center p-4 h-100">
+                    <i class="bi bi-server fs-1 text-primary mb-3"></i>
+                    <h5>Backend</h5>
+                    <p class="text-secondary">Python, Flask, FastAPI, SQLAlchemy, PostgreSQL</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card bg-transparent border-primary text-center p-4 h-100">
+                    <i class="bi bi-display fs-1 text-primary mb-3"></i>
+                    <h5>Frontend</h5>
+                    <p class="text-secondary">HTML/CSS, JavaScript, React, Tailwind, Bootstrap</p>
+                </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="card bg-transparent border-primary text-center p-4 h-100">
+                    <i class="bi bi-tools fs-1 text-primary mb-3"></i>
+                    <h5>Lainnya</h5>
+                    <p class="text-secondary">Git, Docker, Figma, Linux, API Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!<!--====================PORTFOLIO SECTION====================-->
+    <section id="portfolio" class="py-5 py-lg-7 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold gradient-text">Portfolio</h2>
+                <p class="lead text-secondary">Some of the works I have created</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card h-100">
+                        <img src="{{ url_for('static', filename='img/project-1.jpg') }}" class="card-img-top"
+                            alt="Inventory App">
+                        <div class="overlay">
+                            <div>
+                                <h5 class="mb-2">Terminal-Based Grocery Store Management</h5>
+                                <p class="small mb-3">List • function • branching • input/output</p>
+                                <a href="https://github.com/rizkihsn/aplikasi-sembako.git" target="_blank"
+                                    class="btn btn-sm btn-primary">
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card h-100">
+                        <img src="{{ url_for('static', filename='img/project-2.jpg') }}" class="card-img-top"
+                            alt="Personal Finance Tracker">
+                        <div class="overlay">
+                            <div>
+                                <h5 class="mb-2">Inventory Management System</h5>
+                                <p class="small mb-3">Flask • SQLAlchemy • Werkzeug</p>
+                                <a href="https://github.com/rizkihsn/INVENTARIS_SEKOLAH.git" target="_blank"
+                                    class="btn btn-sm btn-primary">
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card h-100">
+                        <img src="{{ url_for('static', filename='img/project-3.jpg') }}" class="card-img-top"
+                            alt="Portfolio Website">
+                        <div class="overlay">
+                            <div>
+                                <h5 class="mb-2">Modern Portfolio Website</h5>
+                                <p class="small mb-3">Flask • Werkzeug • Jinja2</p>
+                                <a href="https://github.com/rizkihsn/portfolio-flask.git" target="_blank"
+                                    class="btn btn-sm btn-primary">
+                                    View on GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 py-lg-7 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="display-5 fw-bold gradient-text">Contact me</h2>
+                <p class="lead text-secondary">Send messages for collaboration or just to chat</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                    <form method="POST">
+                        <div class="mb-4">
+                            <input type="text" class="form-control bg-dark text-white border-primary" name="name"
+                                placeholder="Name" required>
+                        </div>
+                        <div class="mb-4">
+                            <input type="email" class="form-control bg-dark text-white border-primary" name="email"
+                                placeholder="E-mail" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea class="form-control bg-dark text-white border-primary" name="message" rows="6"
+                                placeholder="Your message..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg w-100">send message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% endblock %}

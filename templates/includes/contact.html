@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Hubungi Saya - Rizki Hasan Fauzi{% endblock %}
+
+{% block body_class %}bg-contact{% endblock %} <!-- class custom untuk background beda (opsional) -->
+
+{% block content %}
+
+<section class="py-5 py-lg-7 min-vh-100 d-flex align-items-center">
+    <div class="container">
+        <!-- Judul Halaman -->
+        <div class="text-center mb-5" data-aos="fade-up">
+            <h2 class="display-4 fw-bold gradient-text mb-3">Hubungi Saya</h2>
+            <p class="lead text-secondary fw-light">
+                Punya ide proyek? Ingin kolaborasi? Atau sekadar ngobrol? Kirim pesan saja!
+            </p>
+        </div>
+
+        <!-- Form Kontak -->
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-xl-6" data-aos="fade-up" data-aos-delay="200">
+                <form method="POST" class="p-4 p-lg-5 bg-dark border border-primary rounded-4 shadow-lg">
+                    <div class="mb-4">
+                        <label for="name" class="form-label fw-medium">Nama Lengkap</label>
+                        <input type="text" class="form-control bg-dark text-white border-primary" id="name" name="name"
+                            placeholder="Masukkan nama kamu" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="form-label fw-medium">Email</label>
+                        <input type="email" class="form-control bg-dark text-white border-primary" id="email"
+                            name="email" placeholder="contoh@email.com" required>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="message" class="form-label fw-medium">Pesan / Ide Proyek</label>
+                        <textarea class="form-control bg-dark text-white border-primary" id="message" name="message"
+                            rows="6" placeholder="Ceritakan ide proyekmu atau pertanyaan yang ingin kamu tanyakan..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg w-100 fw-bold">
+                        Kirim Pesan
+                    </button>
+                </form>
+
+                <!-- Info tambahan setelah form -->
+                <div class="text-center mt-4 text-secondary small" data-aos="fade-up" data-aos-delay="400">
+                    <p>Atau hubungi langsung melalui:</p>
+                    <div class="d-flex justify-content-center gap-4 mt-3">
+                        <a href="https://wa.me/6285817760919" target="_blank" class="text-success fs-4">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/_rizkihsn_" target="_blank" class="text-danger fs-4">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/Rizki Hasan Fauzi" target="_blank"
+                            class="text-primary fs-4">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
