@@ -16,3 +16,7 @@ def index():
     current_year = datetime.datetime.now().year
     
     return render_template('index.html', current_year=current_year)
+import os
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
